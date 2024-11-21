@@ -45,9 +45,9 @@ lowercase= word.casefold()
 print(lowercase)  
 
 
-# Replace the letter 'h' with letter 't' from the word "hello"
+# Replace the letter 'h' with letter 'T' from the word "hello"
 word = "hello"
-modified = word.replace('h', 't')
+modified = word.replace('h', 'T')
 print(modified) 
 
 # Rempove leading and traning sapce from the string "  Softwarica College  "
@@ -71,9 +71,13 @@ number = "5"
 formatted= number.zfill(7)  
 print(formatted)  
 
+#count the number of times the text 'PYTHON' is repeated in the following string:
+#"Hello, It's awesome to learn PYTHON.PYTHON is great"
+word = "Hello, It's awesome to learn PYTHON.PYTHON is great"
+count = word.count("PYTHON")
+print(count)  
 
 #ANOTHER PROCESSS
-
 # Convert "softwarica" into uppercase
 print("softwarica".upper()) 
 
@@ -89,4 +93,5 @@ print("  Softwarica College  ".strip())
 
 # Split the string "Hello,Softwarica,College"
 print("Hello,Softwarica,College".split(","))  
+
 
