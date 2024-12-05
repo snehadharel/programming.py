@@ -41,16 +41,31 @@ print("My age is",p1.age,"years old.")
 print("gender",p1.gender,".")
 print("My gmail is",p1.gmail,".")
 
-class car:
+# class car: #declaring class
+#     def __init__(self,model,make,year,cc):
+#         self.model=model
+#         self.make=make
+#         self.year=year
+#         self.cc=cc
+
+# p1=car(" Toyota"," Corolla",2023,1500) #declaring objects for the above class.
+
+# print("The model of the car is ",p1.model,".")
+# print("The manufaturer of the car is",p1.make,".")
+# print("The car has launched on",p1.year,".")
+# print("The engine of the car is",p1.cc,".")
+
+class car: 
     def __init__(self,model,make,year,cc):
         self.model=model
         self.make=make
         self.year=year
         self.cc=cc
+    def myfunc(self):
+        print("The model of the car is ",p1.model,".")
+        print("The manufaturer of the car is",p1.make,".")
+        print("The car has launched on",p1.year,".")
+        print("The engine of the car is",p1.cc,".")
 
-p1=car(" Toyota"," Corolla",2023,1500)
-
-print("The model of the car is ",p1.model,".")
-print("The manufaturer of the car is",p1.make,".")
-print("The car has launched on",p1.year,".")
-print("The engine of the car is",p1.cc,".")
+p1 = car(" Toyota"," Corolla",2023,1500)
+p1.myfunc()
