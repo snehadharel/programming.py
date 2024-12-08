@@ -69,3 +69,4 @@ class car:
 
 p1 = car(" Toyota"," Corolla",2023,1500)
 p1.myfunc()
+
