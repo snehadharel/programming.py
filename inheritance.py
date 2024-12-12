@@ -41,4 +41,58 @@ print(t.car_details())
 print(t.display_details())
 
 
+#multilevel inheritance
+class Person:
+    def __init__(self, name):
+        self.name = name
+        
+
+    def fun1(self):
+        return f"Name: {self.name}"
+          
+class Man(Person):
+    def __init__(self, name, age, gender):
+        super().__init__(name)
+        self.age = age
+        self.gender = gender
+
+    def fun2(self):
+        info = super().fun1()
+        return f"{info} \nAge: {self.age} \nGender: {self.gender}"
+    
+class He(Man):
+    def __init__(self, name, age, gender, height):
+        super().__init__(name, age, gender)
+        self.height = height
+
+    def fun3(self):
+        info = super().fun2()
+        return f"{info} \nHeight: {self.height}cm"
+    
+naam = He('John', 21, 'Male', 180)
+print(naam.fun3())
+
+
+#multiple inheritance
+class Father:
+    def display_father(self):
+        print("John's Father")
+
+class Mother:
+    def display_mother(self):
+        print("John's Mother")
+
+class John(Father, Mother):
+    def display_john(self):
+        print("This is John")
+
+# Create an object of the John class
+j = John()
+j.display_father()
+j.display_mother()
+j.display_john()
+
+
+
+
     
